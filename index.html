@@ -20,36 +20,41 @@
 
     header {
       background-color: #004e89;
-      color: white;
-      padding: 30px 20px;
+      padding: 20px;
     }
 
     header img {
-      height: 60px;
-      vertical-align: middle;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin: 15px 0 0;
+      max-width: 200px;  /* make logo bigger */
+      width: 40%;        /* responsive width for smaller screens */
+      height: auto;
     }
 
     main {
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     iframe {
       width: 100%;
       max-width: 700px;
-      height: 800px;
+      height: 80vh;       /* responsive height relative to viewport */
       border: 1px solid #ccc;
       border-radius: 8px;
     }
 
     footer {
-      padding: 20px;
+      padding: 15px;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    @media (max-width: 500px) {
+      header img {
+        width: 60%;      /* make it scale up on small screens */
+      }
+
+      iframe {
+        height: 90vh;    /* taller on small screens */
+      }
     }
   </style>
 </head>
@@ -60,7 +65,7 @@
   </header>
 
   <main>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI2cM09ssjSSKewow_St2D0TEhKod31ns050-8wcyQ4MVsGw/viewform?embedded=true" width="640" height="1247" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI2cM09ssjSSKewow_St2D0TEhKod31ns050-8wcyQ4MVsGw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </main>
 
   <footer>
@@ -69,4 +74,3 @@
 
 </body>
 </html>
-
