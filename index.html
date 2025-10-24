@@ -20,7 +20,7 @@
     }
 
     header {
-      background-color: #004e89;
+      background-color: #000;
       padding: 10px;
     }
 
@@ -45,13 +45,17 @@
       font-weight: 800;
       margin: 0;
       line-height: 1;
-      color: #004e89;
+      color: #000;
     }
 
     .hero p {
       font-size: 1.5rem;
       color: #444;
       margin-top: 10px;
+    }
+
+    .highlight {
+      color: MediumSeaGreen;
     }
 
     /* VIDEO SECTION */
@@ -101,8 +105,8 @@
       border-top: 1px solid #eee;
     }
 
-    footer a {
-      color: #004e89;
+    footer a, footer b {
+      color: #000;
       text-decoration: none;
     }
 
@@ -127,82 +131,17 @@
     <img src="koyi-logo.png" alt="Koyi Logo">
   </header>
 
-<section class="hero">
-  <h1>
-    <span class="highlight">Zero</span> <span class="rest">Setup;</span>
-  </h1>
-  <p>A communications tool that you don't need to learn.</p>
-</section>
-
-<style>
-  .hero {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-
-  .hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-    color: #444;
-    margin-top: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease 1.8s forwards;
-  }
-
-  .highlight {
-    color: MediumSeaGreen;
-    opacity: 0;
-    transform: translateY(30px);
-    display: inline-block;
-    animation: fadeSlideIn 0.8s ease forwards;
-  }
-
-  .rest {
-    opacity: 0;
-    transform: translateY(30px);
-    display: inline-block;
-    animation: fadeSlideIn 0.8s ease 0.8s forwards;
-  }
-
-  @keyframes fadeSlideIn {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @media (max-width: 600px) {
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero p {
-      font-size: 1rem;
-    }
-  }
-</style>
+  <section class="hero">
+    <h1><span class="highlight">Zero</span> Setup;</h1>
+    <p>A communications tool you don't need to learn.</p>
+  </section>
 
   <section class="video-section">
     <div class="video-wrapper">
-      <!-- 👇 Paste your Loom ID below -->
-      <iframe src="https://www.loom.com/embed/ab0158556e4b4bdfb8554ab179fc9e0c?sid=d063c562-4256-489a-a50a-2f0b4698210e" 
-              frameborder="0" 
-              webkitallowfullscreen 
-              mozallowfullscreen 
+      <iframe src="https://www.loom.com/embed/ab0158556e4b4bdfb8554ab179fc9e0c?sid=d063c562-4256-489a-a50a-2f0b4698210e"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
               allowfullscreen>
       </iframe>
     </div>
