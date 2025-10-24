@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koyi Shipment Updates</title>
+  <title>Koyi Updater</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="koyi-logo.png">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', Arial, sans-serif;
       background-color: #fff;
-      color: #222;
+      color: #111;
       margin: 0;
       padding: 0;
       text-align: center;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -24,36 +25,98 @@
     }
 
     header img {
-      max-width: 100px;  /* make logo bigger */
-      width: 40%;        /* responsive width for smaller screens */
+      max-width: 100px;
+      width: 40%;
       height: auto;
     }
 
-    main {
-      padding: 20px;
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(to bottom, #f7f9fc, #ffffff);
     }
 
-    iframe {
+    .hero h1 {
+      font-size: 6rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: 1;
+      color: #004e89;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #444;
+      margin-top: 10px;
+    }
+
+    /* VIDEO SECTION */
+    .video-section {
+      padding: 60px 20px;
+      background-color: #f8f8f8;
+    }
+
+    .video-section .video-wrapper {
+      position: relative;
+      padding-bottom: 53.75%;
+      height: 0;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .video-section iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FORM SECTION */
+    .form-section {
+      padding: 60px 20px;
+    }
+
+    iframe.form {
       width: 100%;
       max-width: 700px;
-      height: 80vh;       /* responsive height relative to viewport */
+      height: 80vh;
       border: 1px solid #ccc;
       border-radius: 8px;
     }
 
+    /* FOOTER */
     footer {
-      padding: 15px;
+      padding: 20px;
       font-size: 0.9rem;
       color: #555;
+      border-top: 1px solid #eee;
     }
 
-    @media (max-width: 500px) {
-      header img {
-        width: 60%;      /* make it scale up on small screens */
-      }
+    footer a {
+      color: #004e89;
+      text-decoration: none;
+    }
 
-      iframe {
-        height: 90vh;    /* taller on small screens */
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
       }
     }
   </style>
@@ -64,12 +127,35 @@
     <img src="koyi-logo.png" alt="Koyi Logo">
   </header>
 
-  <main>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI2cM09ssjSSKewow_St2D0TEhKod31ns050-8wcyQ4MVsGw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </main>
+  <section class="hero">
+    <h1>Zero Setup.</h1>
+    <p>Instant shipment updates, straight to your inbox.</p>
+  </section>
+
+  <section class="video-section">
+    <div class="video-wrapper">
+      <!-- 👇 Paste your Loom ID below -->
+      <iframe src="https://www.loom.com/embed/ab0158556e4b4bdfb8554ab179fc9e0c?sid=d063c562-4256-489a-a50a-2f0b4698210e" 
+              frameborder="0" 
+              webkitallowfullscreen 
+              mozallowfullscreen 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <iframe class="form"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeI2cM09ssjSSKewow_St2D0TEhKod31ns050-8wcyQ4MVsGw/viewform?embedded=true"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </section>
 
   <footer>
-    &copy; 2025 Koyi.
+    &copy; 2025 Koyi. Contact us at <a href="mailto:koyiupdates@gmail.com">koyiupdates@gmail.com</a>
   </footer>
 
 </body>
